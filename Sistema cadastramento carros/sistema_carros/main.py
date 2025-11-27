@@ -1,15 +1,27 @@
 
 from models.carro import Carro
 
-def menu():
+def menu_principal():
     print("\n===SISTEMA DE CADASTRO DE CARROS===")
     print("1 - Cadastrar carro")
     print("2 - Listar carros")
     print("0 - Sair")
     return int(input("Escolha uma opção: "))
 
+def menu_marca_carro():
+    print("1 - Fiat")
+    print("2 - Chevrolet")
+    print("3 - VOlkswagen")
+    return int(input("Escolha uma opção: "))
+
+def menu_modelo_carro():
+    print("1 - Uno")
+    print("2 - Argo")
+    print("3 - Mobi")
+    return int(input("Escolha uma opção: "))
+
 while True:
-    opcao = menu()
+    opcao = menu_principal()
     
     if opcao == 1:
         print("\n--- Cadastrar Carro ---")
